@@ -37,3 +37,50 @@ function trimString(string, from, to) {
 console.log(trimString('qwertytrewq', 2, 4));
 
 //4 task
+function getSumNumbers(num) {
+    num = String(num);
+    var result = 0;
+    for(let i = 0; i < num.length; i++) {
+        result += Number(num[i]);
+    }
+    return result;
+}
+
+console.log(getSumNumbers(2021));
+
+//5 task
+function getSum(a, b) {
+    var result = 0;
+    if(a < b) {
+        for(let i = a; i <= b; i++) {
+            result += i;
+        }
+    } else {
+        for(let i = b; i <= a; i++) {
+            result += i;
+        }
+    }
+    return result;
+
+}
+
+console.log(getSum(1, 0));
+console.log(getSum(1, 2));
+console.log(getSum(0, 1));
+console.log(getSum(1, 1));
+console.log(getSum(-1, 0));
+console.log(getSum(-1, 2));
+
+//6 task
+function fooBoo(boolean, foo, boo) {
+    if(boolean) {
+        return foo;
+    } else {
+        return boo;
+    }
+}
+
+console.log(fooBoo(false,'правда', 'ложь'));
+
+//7 task
+
