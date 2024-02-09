@@ -73,14 +73,32 @@ console.log(getSum(-1, 2));
 
 //6 task
 function fooBoo(boolean, foo, boo) {
-    if(boolean) {
-        return foo;
-    } else {
-        return boo;
+    switch(boolean) {
+        case true:
+            return foo;
+            break;
+        default:
+            return boo;
     }
+    
+    // второй вариант решения
+    // if(boolean) {
+    //     return foo;
+    // } else {
+    //     return boo;
+    // }
 }
 
-console.log(fooBoo(false,'правда', 'ложь'));
+console.log(fooBoo(true,'правда', 'ложь'));
 
 //7 task
+function isTriangle(a, b, c) {
+    var result = false;
+    if(a + b > c && a + c > b && b + c > a){
+        result = true;
+    }
+    return result;
+}
 
+console.log(isTriangle(3, 2, -2));
+console.log(isTriangle(3, 2, 2));
